@@ -4,7 +4,6 @@
 npm install
 ```
 
-
 # Migrations
 
 ```sh
@@ -27,8 +26,13 @@ npm run start
 
 ```sh
 docker-compose exec postgres bash
-psql -h localhost -d my_store -U nico
+psql -h localhost -d <database> -U <user>
 \d+
 SELECT * FROM users;
 DELETE FROM users WHERE id=<id>;
 ```
+
+# GraphQL
+
+store_graphql
+npm i apollo-server-express --save
